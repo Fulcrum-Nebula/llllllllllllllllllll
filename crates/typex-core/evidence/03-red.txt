@@ -1,0 +1,24 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.12s
+     Running tests/analysis.rs (target/debug/deps/analysis-3f708d8e1b80d02e)
+
+running 1 test
+test groups_recover_outermost_opaque_spans ... FAILED
+
+failures:
+
+---- groups_recover_outermost_opaque_spans stdout ----
+
+thread 'groups_recover_outermost_opaque_spans' (193188) panicked at tests/analysis.rs:4:5:
+assertion `left == right` failed
+  left: Analysis { preview: "{α{b}}", issues: [] }
+ right: Analysis { preview: "αb", issues: [] }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    groups_recover_outermost_opaque_spans
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test analysis`

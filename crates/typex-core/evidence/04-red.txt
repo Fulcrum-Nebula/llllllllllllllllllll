@@ -1,0 +1,25 @@
+    Blocking waiting for file lock on package cache
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.29s
+     Running tests/fonts.rs (target/debug/deps/fonts-1f2ff579d75e9a20)
+
+running 1 test
+test fonts_complete_maps_and_opaque_invalid_payloads ... FAILED
+
+failures:
+
+---- fonts_complete_maps_and_opaque_invalid_payloads stdout ----
+
+thread 'fonts_complete_maps_and_opaque_invalid_payloads' (194351) panicked at tests/fonts.rs:13:13:
+assertion `left == right` failed
+  left: Analysis { preview: "\\mathbb{A}", issues: [Issue { kind: Incomplete, source: Span { start: ScalarOffset(0), end: ScalarOffset(10) } }] }
+ right: Analysis { preview: "𝔸", issues: [] }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    fonts_complete_maps_and_opaque_invalid_payloads
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test fonts`

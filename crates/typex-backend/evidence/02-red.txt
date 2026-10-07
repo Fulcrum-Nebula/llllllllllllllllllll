@@ -1,0 +1,16 @@
+test_01_init_framing_flush (__main__.Wire.test_01_init_framing_flush) ... ok
+test_02_conversion_editing_raw_cancel (__main__.Wire.test_02_conversion_editing_raw_cancel) ... ERROR
+
+======================================================================
+ERROR: test_02_conversion_editing_raw_cancel (__main__.Wire.test_02_conversion_editing_raw_cancel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-backend/tests/stdio.py", line 45, in test_02_conversion_editing_raw_cancel
+    self.init(); self.assertTrue(self.begin()['return'])
+                                 ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'return'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+FAILED (errors=1)

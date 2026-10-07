@@ -1,0 +1,8 @@
+{
+  "name": "20l TyPeX Demo",
+  "version": "0.1.0",
+  "guid": "{D93F3E23-0F2D-4D7A-9F28-51DC82B37A60}",
+  "locale": "zh-Hant-TW",
+  "fallbackLocale": "zh-TW",
+  "icon": "icon.ico"
+}

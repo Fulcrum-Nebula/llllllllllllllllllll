@@ -1,0 +1,13 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+error[E0432]: unresolved imports `typex_core::dispatch`, `typex_core::Extension`, `typex_core::Outcome`, `typex_core::Disposition`
+ --> tests/extension.rs:1:18
+  |
+1 | use typex_core::{dispatch, Extension, Outcome, Disposition};
+  |                  ^^^^^^^^  ^^^^^^^^^  ^^^^^^^  ^^^^^^^^^^^ no `Disposition` in the root
+  |                  |         |          |
+  |                  |         |          no `Outcome` in the root
+  |                  |         no `Extension` in the root
+  |                  no `dispatch` in the root
+
+For more information about this error, try `rustc --explain E0432`.
+error: could not compile `typex-core` (test "extension") due to 1 previous error

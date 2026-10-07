@@ -1,0 +1,43 @@
+20l TyPeX Demo 0.1.0 — experimental, unsigned Windows plugin
+Windows runtime gates A10–A17: NOT RUN. Do not disable SmartScreen/security.
+
+Official PIME 1.3.0-stable is a separately installed prerequisite:
+https://github.com/EasyIME/PIME/releases/tag/v1.3.0-stable
+It is not bundled, owned, updated or uninstalled by this plugin. PIME/libIME2
+have LGPL and other third-party license obligations; consult the official
+release/source notices. No native PIME source code or binaries are copied
+into this plugin. Windows API declarations are provided by windows-rs.
+
+Only Windows 11 x64 local desktop, with an interactive administrator using
+same-user UAC consent, is supported by this installer. Over-the-shoulder
+credentials, standard-user installation through a different administrator,
+remote desktop and service sessions are refused. Profile GUID is fixed.
+Other users' profiles are not touched. Sign out/back in to reload PIME;
+no process is killed. Submit/cancel before switching fields/profiles.
+
+TyPeX may lose drafts or leave raw preedit text in the application on forced
+termination. Native focus, non-BMP cursor, sensitive controls, latency and
+host logging require Windows validation. The backend has no input telemetry;
+this does NOT establish that the official host does not log input.
+
+UniTeX conversion knowledge: MIT, Copyright (c) 2023 by kokic <kokicplus@gmail.com>.
+The MIT permission and disclaimer below also apply to the reused UniTeX
+conversion knowledge. Dependency license audit remains a release gate.
+
+MIT License (this installer/helper and original icon)
+Copyright (c) 2026 TyPeX contributors
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

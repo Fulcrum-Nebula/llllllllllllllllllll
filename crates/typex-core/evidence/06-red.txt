@@ -1,0 +1,24 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.17s
+     Running tests/scripts.rs (target/debug/deps/scripts-8781c24de394c3c0)
+
+running 1 test
+test scripts_full_tables_base_rules_and_recovery ... FAILED
+
+failures:
+
+---- scripts_full_tables_base_rules_and_recovery stdout ----
+
+thread 'scripts_full_tables_base_rules_and_recovery' (200389) panicked at tests/scripts.rs:5:9:
+assertion `left == right` failed
+  left: Analysis { preview: "x^2 + y_1", issues: [] }
+ right: Analysis { preview: "x² + y₁", issues: [] }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    scripts_full_tables_base_rules_and_recovery
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test scripts`

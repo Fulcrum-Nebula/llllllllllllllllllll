@@ -1,0 +1,94 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+error[E0433]: cannot find type `LifecycleReason` in this scope
+ --> tests/lifecycle.rs:8:24
+  |
+8 | ...   for reason in [LifecycleReason::ProfileClosed,LifecycleReason::KeyboardClosed,LifecycleReason::CompositionEnded{forced:false},L...
+  |                      ^^^^^^^^^^^^^^^ use of undeclared type `LifecycleReason`
+
+error[E0433]: cannot find type `LifecycleReason` in this scope
+ --> tests/lifecycle.rs:8:55
+  |
+8 | ...   for reason in [LifecycleReason::ProfileClosed,LifecycleReason::KeyboardClosed,LifecycleReason::CompositionEnded{forced:false},L...
+  |                                                     ^^^^^^^^^^^^^^^ use of undeclared type `LifecycleReason`
+
+error[E0433]: cannot find type `LifecycleReason` in this scope
+ --> tests/lifecycle.rs:8:182
+  |
+8 | ...eason::CompositionEnded{forced:true},LifecycleReason::Disconnected] {
+  |                                         ^^^^^^^^^^^^^^^ use of undeclared type `LifecycleReason`
+
+error[E0599]: no variant, associated function, or constant named `Lifecycle` found for enum `typex_core::typex::Event` in the current scope
+ --> tests/lifecycle.rs:9:32
+  |
+9 |             let event = Event::Lifecycle(reason);
+  |                                ^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Cancel` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/lifecycle.rs:15:36
+   |
+15 |     let out = step(&editing,Event::Cancel);
+   |                                    ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `ClearPreedit` found for enum `typex_core::typex::Effect` in the current scope
+  --> tests/lifecycle.rs:16:126
+   |
+16 | ...cts,vec![Effect::ClearPreedit]);
+   |                     ^^^^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Effect`
+   |
+help: there is a variant with a similar name
+   |
+16 -     assert_eq!(out.state,State::Idle); assert_eq!(out.disposition,Disposition::Consume); assert_eq!(out.effects,vec![Effect::ClearPreedit]);
+16 +     assert_eq!(out.state,State::Idle); assert_eq!(out.disposition,Disposition::Consume); assert_eq!(out.effects,vec![Effect::SetPreedit { raw: /* value */, cursor: /* value */ }]);
+   |
+
+error[E0599]: no variant, associated function, or constant named `Cancel` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/lifecycle.rs:23:186
+   |
+23 | ...EffectId(1)),Event::Cancel,Event::UnsupportedKey,Event::Lifecycle(LifecycleReason::Disconnected)] {
+   |                        ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `UnsupportedKey` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/lifecycle.rs:23:200
+   |
+23 | ...::Cancel,Event::UnsupportedKey,Event::Lifecycle(LifecycleReason::Disconnected)] {
+   |                    ^^^^^^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Lifecycle` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/lifecycle.rs:23:222
+   |
+23 | ...upportedKey,Event::Lifecycle(LifecycleReason::Disconnected)] {
+   |                       ^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `LifecycleReason` in this scope
+  --> tests/lifecycle.rs:23:232
+   |
+23 | ...nt::UnsupportedKey,Event::Lifecycle(LifecycleReason::Disconnected)] {
+   |                                        ^^^^^^^^^^^^^^^ use of undeclared type `LifecycleReason`
+
+error[E0599]: no variant, associated function, or constant named `UnsupportedKey` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/lifecycle.rs:29:38
+   |
+29 | ...   if matches!(event,Event::UnsupportedKey) { assert_eq!(p,Disposition::Pass); assert_eq!(out.state,s); assert!(out.effects.is_em...
+   |                                ^^^^^^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Lifecycle` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/lifecycle.rs:30:75
+   |
+30 | ...:Begin(_) | Event::Lifecycle(_)) { assert_eq!(p,Disposition::Pass); assert!(out.effects.is_empty()); }
+   |                       ^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `LifecycleReason` in this scope
+ --> tests/lifecycle.rs:8:87
+  |
+8 | ...osed,LifecycleReason::KeyboardClosed,LifecycleReason::CompositionEnded{forced:false},LifecycleReason::CompositionEnded{forced:true...
+  |                                         ^^^^^^^^^^^^^^^ use of undeclared type `LifecycleReason`
+
+error[E0433]: cannot find type `LifecycleReason` in this scope
+ --> tests/lifecycle.rs:8:135
+  |
+8 | ...ason::CompositionEnded{forced:false},LifecycleReason::CompositionEnded{forced:true},LifecycleReason::Disconnected] {
+  |                                         ^^^^^^^^^^^^^^^ use of undeclared type `LifecycleReason`
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.
+error: could not compile `typex-core` (test "lifecycle") due to 14 previous errors

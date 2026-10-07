@@ -1,0 +1,28 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+error[E0599]: no variant, associated function, or constant named `Notice` found for enum `typex_core::typex::Effect` in the current scope
+ --> tests/commit.rs:8:74
+  |
+8 |         assert_eq!(out.state,begin); assert_eq!(out.effects,vec![Effect::Notice(Notice::Empty)]);
+  |                                                                          ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Effect`
+
+error[E0433]: cannot find type `Notice` in this scope
+ --> tests/commit.rs:8:81
+  |
+8 |         assert_eq!(out.state,begin); assert_eq!(out.effects,vec![Effect::Notice(Notice::Empty)]);
+  |                                                                                 ^^^^^^ use of undeclared type `Notice`
+
+error[E0599]: no variant, associated function, or constant named `Notice` found for enum `typex_core::typex::Effect` in the current scope
+  --> tests/commit.rs:14:90
+   |
+14 |             assert_eq!(converted.state,draft); assert_eq!(converted.effects,vec![Effect::Notice(Notice::InvalidInput)]);
+   |                                                                                          ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Effect`
+
+error[E0433]: cannot find type `Notice` in this scope
+  --> tests/commit.rs:14:97
+   |
+14 |             assert_eq!(converted.state,draft); assert_eq!(converted.effects,vec![Effect::Notice(Notice::InvalidInput)]);
+   |                                                                                                 ^^^^^^ use of undeclared type `Notice`
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.
+error: could not compile `typex-core` (test "commit") due to 4 previous errors

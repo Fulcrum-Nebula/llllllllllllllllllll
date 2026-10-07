@@ -1,0 +1,94 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+error[E0599]: no variant, associated function, or constant named `Move` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:10:17
+   |
+10 |         (Event::Move(Direction::Home),"𝐀𝐁x",0,1),
+   |                 ^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `Direction` in this scope
+  --> tests/editing.rs:10:22
+   |
+10 |         (Event::Move(Direction::Home),"𝐀𝐁x",0,1),
+   |                      ^^^^^^^^^ use of undeclared type `Direction`
+
+error[E0599]: no variant, associated function, or constant named `Backspace` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:11:17
+   |
+11 |         (Event::Backspace,"𝐀𝐁x",0,1),
+   |                 ^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Delete` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:12:17
+   |
+12 |         (Event::Delete,"𝐁x",0,2),
+   |                 ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Move` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:13:17
+   |
+13 |         (Event::Move(Direction::Right),"𝐁x",1,3),
+   |                 ^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `Direction` in this scope
+  --> tests/editing.rs:13:22
+   |
+13 |         (Event::Move(Direction::Right),"𝐁x",1,3),
+   |                      ^^^^^^^^^ use of undeclared type `Direction`
+
+error[E0599]: no variant, associated function, or constant named `Move` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:15:17
+   |
+15 |         (Event::Move(Direction::Left),"𝐁🙂x",1,5),
+   |                 ^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `Direction` in this scope
+  --> tests/editing.rs:15:22
+   |
+15 |         (Event::Move(Direction::Left),"𝐁🙂x",1,5),
+   |                      ^^^^^^^^^ use of undeclared type `Direction`
+
+error[E0599]: no variant, associated function, or constant named `Delete` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:16:17
+   |
+16 |         (Event::Delete,"𝐁x",1,6),
+   |                 ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Move` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:17:17
+   |
+17 |         (Event::Move(Direction::End),"𝐁x",2,7),
+   |                 ^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `Direction` in this scope
+  --> tests/editing.rs:17:22
+   |
+17 |         (Event::Move(Direction::End),"𝐁x",2,7),
+   |                      ^^^^^^^^^ use of undeclared type `Direction`
+
+error[E0599]: no variant, associated function, or constant named `Move` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:18:17
+   |
+18 |         (Event::Move(Direction::Right),"𝐁x",2,7),
+   |                 ^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0433]: cannot find type `Direction` in this scope
+  --> tests/editing.rs:18:22
+   |
+18 |         (Event::Move(Direction::Right),"𝐁x",2,7),
+   |                      ^^^^^^^^^ use of undeclared type `Direction`
+
+error[E0599]: no variant, associated function, or constant named `Delete` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:19:17
+   |
+19 |         (Event::Delete,"𝐁x",2,7),
+   |                 ^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+error[E0599]: no variant, associated function, or constant named `Backspace` found for enum `typex_core::typex::Event` in the current scope
+  --> tests/editing.rs:20:17
+   |
+20 |         (Event::Backspace,"𝐁",1,8),
+   |                 ^^^^^^^^^ variant, associated function, or constant not found in `typex_core::typex::Event`
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.
+error: could not compile `typex-core` (test "editing") due to 15 previous errors

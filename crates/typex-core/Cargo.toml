@@ -1,0 +1,11 @@
+[package]
+name = "typex-core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Pure typed extension dispatch and bounded TyPeX route A core"
+
+[lib]
+path = "src/lib.rs"
+
+[workspace]

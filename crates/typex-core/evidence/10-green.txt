@@ -1,0 +1,78 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.85s
+     Running unittests src/lib.rs (crates/typex-core/target/debug/deps/typex_core-9830d66f89cc1130)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/analysis.rs (crates/typex-core/target/debug/deps/analysis-3f708d8e1b80d02e)
+
+running 2 tests
+test groups_recover_outermost_opaque_spans ... ok
+test symbols_longest_commands_and_literal_preservation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/bounds.rs (crates/typex-core/target/debug/deps/bounds-a9b24af8317ef0fb)
+
+running 1 test
+test analysis_bounds_and_unsupported_control_syntax ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/commit.rs (crates/typex-core/target/debug/deps/commit-556966eaa07d19c7)
+
+running 1 test
+test invalid_converted_retains_draft_raw_commits_exact_source_and_empty_rejected ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/editing.rs (crates/typex-core/target/debug/deps/editing-3813aad76ddfa8df)
+
+running 1 test
+test scalar_editing_and_clamped_moves ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/extension.rs (crates/typex-core/target/debug/deps/extension-1beeb43f2d576856)
+
+running 1 test
+test non_math_extension_dispatches_typed_values ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fonts.rs (crates/typex-core/target/debug/deps/fonts-1f2ff579d75e9a20)
+
+running 1 test
+test fonts_complete_maps_and_opaque_invalid_payloads ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fractions.rs (crates/typex-core/target/debug/deps/fractions-c2e255e31488ad3a)
+
+running 1 test
+test fractions_recursive_scalar_parens_and_whole_failure ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/scripts.rs (crates/typex-core/target/debug/deps/scripts-8781c24de394c3c0)
+
+running 1 test
+test scripts_full_tables_base_rules_and_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/state.rs (crates/typex-core/target/debug/deps/state-cd0ca60237c2fbae)
+
+running 1 test
+test begin_insert_converted_intent_is_pure_and_not_replayed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests typex_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

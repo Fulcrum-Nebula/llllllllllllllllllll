@@ -1,0 +1,18 @@
+test_01_init_framing_flush (__main__.Wire.test_01_init_framing_flush) ... ok
+test_02_conversion_editing_raw_cancel (__main__.Wire.test_02_conversion_editing_raw_cancel) ... ok
+test_03_probes_sequence_clients (__main__.Wire.test_03_probes_sequence_clients) ... ok
+test_04_lifecycle_modes_shortcuts (__main__.Wire.test_04_lifecycle_modes_shortcuts) ... FAIL
+
+======================================================================
+FAIL: test_04_lifecycle_modes_shortcuts (__main__.Wire.test_04_lifecycle_modes_shortcuts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-backend/tests/stdio.py", line 87, in test_04_lifecycle_modes_shortcuts
+    self.assertFalse(self.key(13)['return']); self.assertFalse(self.key(65,method='onKeyUp')['return'])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+FAILED (failures=1)

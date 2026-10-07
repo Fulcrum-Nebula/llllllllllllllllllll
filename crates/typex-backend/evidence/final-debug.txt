@@ -1,0 +1,25 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.01s
+     Running unittests src/main.rs (target/debug/deps/typex_backend-8c7b7e526d99ba17)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/subprocess.rs (target/debug/deps/subprocess-4a4f0f4ebc7014e9)
+
+running 1 test
+test_01_init_framing_flush (__main__.Wire.test_01_init_framing_flush) ... ok
+test_02_conversion_editing_raw_cancel (__main__.Wire.test_02_conversion_editing_raw_cancel) ... ok
+test_03_probes_sequence_clients (__main__.Wire.test_03_probes_sequence_clients) ... ok
+test_04_lifecycle_modes_shortcuts (__main__.Wire.test_04_lifecycle_modes_shortcuts) ... ok
+test_05_bad_fields_bounded_framing (__main__.Wire.test_05_bad_fields_bounded_framing) ... ok
+test_06_write_failure_eof_and_repeat (__main__.Wire.test_06_write_failure_eof_and_repeat) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.128s
+
+OK
+test real_stdio_contract ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+

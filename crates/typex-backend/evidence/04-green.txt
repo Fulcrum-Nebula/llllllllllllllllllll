@@ -1,0 +1,9 @@
+test_01_init_framing_flush (__main__.Wire.test_01_init_framing_flush) ... ok
+test_02_conversion_editing_raw_cancel (__main__.Wire.test_02_conversion_editing_raw_cancel) ... ok
+test_03_probes_sequence_clients (__main__.Wire.test_03_probes_sequence_clients) ... ok
+test_04_lifecycle_modes_shortcuts (__main__.Wire.test_04_lifecycle_modes_shortcuts) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.027s
+
+OK

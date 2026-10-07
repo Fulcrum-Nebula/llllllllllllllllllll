@@ -1,0 +1,196 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+error[E0425]: cannot find type `State` in this scope
+ --> tests/state.rs:3:15
+  |
+3 | fn begin() -> State { step(&State::Idle, Event::Begin(SessionId(7))).state }
+  |               ^^^^^ not found in this scope
+
+error[E0425]: cannot find type `State` in this scope
+ --> tests/state.rs:4:19
+  |
+4 | fn insert(state: &State, text: &str) -> State { step(state,Event::Insert(text.into())).state }
+  |                   ^^^^^ not found in this scope
+
+error[E0425]: cannot find type `State` in this scope
+ --> tests/state.rs:4:41
+  |
+4 | fn insert(state: &State, text: &str) -> State { step(state,Event::Insert(text.into())).state }
+  |                                         ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `TyPeX` in this scope
+  --> tests/state.rs:18:23
+   |
+18 |     assert_eq!(result,TyPeX.step(&edited.state,event.clone()));
+   |                       ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `TyPeX` in this scope
+  --> tests/state.rs:19:16
+   |
+19 |     assert_eq!(TyPeX.view(&edited.state),v);
+   |                ^^^^^ not found in this scope
+
+error[E0425]: cannot find value `TyPeX` in this scope
+  --> tests/state.rs:20:16
+   |
+20 |     assert_eq!(TyPeX.probe(&edited.state,&event),Disposition::Consume);
+   |                ^^^^^ not found in this scope
+
+error[E0433]: cannot find type `State` in this scope
+ --> tests/state.rs:3:29
+  |
+3 | fn begin() -> State { step(&State::Idle, Event::Begin(SessionId(7))).state }
+  |                             ^^^^^ use of undeclared type `State`
+
+error[E0433]: cannot find type `Event` in this scope
+ --> tests/state.rs:3:42
+  |
+3 | fn begin() -> State { step(&State::Idle, Event::Begin(SessionId(7))).state }
+  |                                          ^^^^^ use of undeclared type `Event`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `SessionId` in this scope
+ --> tests/state.rs:3:55
+  |
+3 | fn begin() -> State { step(&State::Idle, Event::Begin(SessionId(7))).state }
+  |                                                       ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `step` in this scope
+ --> tests/state.rs:3:23
+  |
+3 | fn begin() -> State { step(&State::Idle, Event::Begin(SessionId(7))).state }
+  |                       ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Event` in this scope
+ --> tests/state.rs:4:60
+  |
+4 | fn insert(state: &State, text: &str) -> State { step(state,Event::Insert(text.into())).state }
+  |                                                            ^^^^^ use of undeclared type `Event`
+
+error[E0425]: cannot find function `step` in this scope
+ --> tests/state.rs:4:49
+  |
+4 | fn insert(state: &State, text: &str) -> State { step(state,Event::Insert(text.into())).state }
+  |                                                 ^^^^ not found in this scope
+
+error[E0433]: cannot find type `State` in this scope
+ --> tests/state.rs:7:23
+  |
+7 |     let begun = step(&State::Idle, Event::Begin(SessionId(7)));
+  |                       ^^^^^ use of undeclared type `State`
+
+error[E0433]: cannot find type `Event` in this scope
+ --> tests/state.rs:7:36
+  |
+7 |     let begun = step(&State::Idle, Event::Begin(SessionId(7)));
+  |                                    ^^^^^ use of undeclared type `Event`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `SessionId` in this scope
+ --> tests/state.rs:7:49
+  |
+7 |     let begun = step(&State::Idle, Event::Begin(SessionId(7)));
+  |                                                 ^^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `step` in this scope
+ --> tests/state.rs:7:17
+  |
+7 |     let begun = step(&State::Idle, Event::Begin(SessionId(7)));
+  |                 ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Event` in this scope
+  --> tests/state.rs:10:36
+   |
+10 |     let edited = step(&begun.state,Event::Insert(r"\alpha".into()));
+   |                                    ^^^^^ use of undeclared type `Event`
+
+error[E0425]: cannot find function `step` in this scope
+  --> tests/state.rs:10:18
+   |
+10 |     let edited = step(&begun.state,Event::Insert(r"\alpha".into()));
+   |                  ^^^^ not found in this scope
+
+error[E0425]: cannot find function `view` in this scope
+  --> tests/state.rs:12:13
+   |
+12 |     let v = view(&edited.state);
+   |             ^^^^ not found in this scope
+
+error[E0433]: cannot find type `StateTag` in this scope
+  --> tests/state.rs:13:89
+   |
+13 |     assert_eq!(v.raw,r"\alpha"); assert_eq!(v.analysis.preview,"α"); assert_eq!(v.phase,StateTag::Editing);
+   |                                                                                         ^^^^^^^^ use of undeclared type `StateTag`
+
+error[E0433]: cannot find type `Event` in this scope
+  --> tests/state.rs:14:17
+   |
+14 |     let event = Event::Commit(CommitKind::Converted,EffectId(9));
+   |                 ^^^^^ use of undeclared type `Event`
+
+error[E0433]: cannot find type `CommitKind` in this scope
+  --> tests/state.rs:14:31
+   |
+14 |     let event = Event::Commit(CommitKind::Converted,EffectId(9));
+   |                               ^^^^^^^^^^ use of undeclared type `CommitKind`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `EffectId` in this scope
+  --> tests/state.rs:14:53
+   |
+14 |     let event = Event::Commit(CommitKind::Converted,EffectId(9));
+   |                                                     ^^^^^^^^ not found in this scope
+
+error[E0425]: cannot find function `probe` in this scope
+  --> tests/state.rs:15:16
+   |
+15 |     assert_eq!(probe(&edited.state,&event),Disposition::Consume);
+   |                ^^^^^ not found in this scope
+
+error[E0425]: cannot find function `step` in this scope
+  --> tests/state.rs:16:18
+   |
+16 |     let result = step(&edited.state,event.clone());
+   |                  ^^^^ not found in this scope
+
+error[E0425]: cannot find function `step` in this scope
+  --> tests/state.rs:17:23
+   |
+17 |     assert_eq!(result,step(&edited.state,event.clone()));
+   |                       ^^^^ not found in this scope
+
+error[E0433]: cannot find type `State` in this scope
+  --> tests/state.rs:21:29
+   |
+21 |     assert_eq!(result.state,State::Idle);
+   |                             ^^^^^ use of undeclared type `State`
+
+error[E0425]: cannot find function, tuple struct or tuple variant `EffectId` in this scope
+  --> tests/state.rs:22:68
+   |
+22 |     assert_eq!(result.effects,vec![Effect::SubmitInCurrentReply{id:EffectId(9),kind:CommitKind::Converted,text:"α".into()}]);
+   |                                                                    ^^^^^^^^ not found in this scope
+
+error[E0433]: cannot find type `CommitKind` in this scope
+  --> tests/state.rs:22:85
+   |
+22 |     assert_eq!(result.effects,vec![Effect::SubmitInCurrentReply{id:EffectId(9),kind:CommitKind::Converted,text:"α".into()}]);
+   |                                                                                     ^^^^^^^^^^ use of undeclared type `CommitKind`
+
+error[E0425]: cannot find function `step` in this scope
+  --> tests/state.rs:23:18
+   |
+23 |     let repeat = step(&result.state,event);
+   |                  ^^^^ not found in this scope
+
+error[E0433]: cannot find type `Effect` in this scope
+  --> tests/state.rs:11:36
+   |
+11 |     assert_eq!(edited.effects,vec![Effect::SetPreedit{raw:r"\alpha".into(),cursor:ScalarOffset(6)}]);
+   |                                    ^^^^^^ use of undeclared type `Effect`
+
+error[E0433]: cannot find type `Effect` in this scope
+  --> tests/state.rs:22:36
+   |
+22 |     assert_eq!(result.effects,vec![Effect::SubmitInCurrentReply{id:EffectId(9),kind:CommitKind::Converted,text:"α".into()}]);
+   |                                    ^^^^^^ use of undeclared type `Effect`
+
+Some errors have detailed explanations: E0425, E0433.
+For more information about an error, try `rustc --explain E0425`.
+error: could not compile `typex-core` (test "state") due to 32 previous errors

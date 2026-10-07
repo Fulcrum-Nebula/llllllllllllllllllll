@@ -1,0 +1,6 @@
+test_01_init_framing_flush (__main__.Wire.test_01_init_framing_flush) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK

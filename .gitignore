@@ -1,0 +1,8 @@
+**/target/
+**/__pycache__/
+*.pyc
+*.exe
+*.dll
+**/dependency-metadata.json
+.env
+.env.*

@@ -1,0 +1,9 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+error[E0432]: unresolved import `typex_core::typex`
+ --> tests/analysis.rs:1:17
+  |
+1 | use typex_core::typex::*;
+  |                 ^^^^^ could not find `typex` in `typex_core`
+
+For more information about this error, try `rustc --explain E0432`.
+error: could not compile `typex-core` (test "analysis") due to 1 previous error

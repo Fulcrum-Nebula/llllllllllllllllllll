@@ -1,0 +1,110 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `release` profile [optimized] target(s) in 1.53s
+     Running unittests src/lib.rs (crates/typex-core/target/release/deps/typex_core-5da8bbc2a568e16e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/analysis.rs (crates/typex-core/target/release/deps/analysis-d7aafd99f7adc6c1)
+
+running 2 tests
+test groups_recover_outermost_opaque_spans ... ok
+test symbols_longest_commands_and_literal_preservation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/bounds.rs (crates/typex-core/target/release/deps/bounds-a586fdf2cf757bd3)
+
+running 1 test
+test analysis_bounds_and_unsupported_control_syntax ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/commit.rs (crates/typex-core/target/release/deps/commit-de0fd4bb7831e84a)
+
+running 1 test
+test invalid_converted_retains_draft_raw_commits_exact_source_and_empty_rejected ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/editing.rs (crates/typex-core/target/release/deps/editing-cbc9e2940ebe6bfc)
+
+running 2 tests
+test scalar_editing_and_clamped_moves ... ok
+test insert_limits_controls_and_revision_exhaustion_are_atomic ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/extension.rs (crates/typex-core/target/release/deps/extension-e6fa9b65507669c4)
+
+running 1 test
+test non_math_extension_dispatches_typed_values ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fonts.rs (crates/typex-core/target/release/deps/fonts-a133309527dd6a18)
+
+running 1 test
+test fonts_complete_maps_and_opaque_invalid_payloads ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/fractions.rs (crates/typex-core/target/release/deps/fractions-3309209e07422264)
+
+running 1 test
+test fractions_recursive_scalar_parens_and_whole_failure ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/golden.rs (crates/typex-core/target/release/deps/golden-9b4cb7ecbbcbf80b)
+
+running 1 test
+test c01_c32_exact_preview_issue_spans_and_both_commit_paths ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/invariants.rs (crates/typex-core/target/release/deps/invariants-63b9ad1ed48161f4)
+
+running 1 test
+test independent_sessions_and_scalar_invariants_through_event_sequences ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/lifecycle.rs (crates/typex-core/target/release/deps/lifecycle-305ab109fdbeb249)
+
+running 2 tests
+test lifecycle_and_cancel_never_submit_or_clear_unknown_target ... ok
+test probe_is_read_only_and_matches_step_for_every_event ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/recovery.rs (crates/typex-core/target/release/deps/recovery-44b37fc0eb668796)
+
+running 3 tests
+test opaque_recovery_prefers_outer_span_and_preserves_neighbors ... ok
+test spaced_font_is_one_opaque_construct_with_independent_neighbor ... ok
+test bounded_generated_sources_are_total_and_spans_are_ordered ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/scripts.rs (crates/typex-core/target/release/deps/scripts-8a898fbbf4491b99)
+
+running 1 test
+test scripts_full_tables_base_rules_and_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/state.rs (crates/typex-core/target/release/deps/state-90e4983dd99e2c58)
+
+running 1 test
+test begin_insert_converted_intent_is_pure_and_not_replayed ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests typex_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

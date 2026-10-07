@@ -1,0 +1,24 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.24s
+     Running tests/fractions.rs (target/debug/deps/fractions-c2e255e31488ad3a)
+
+running 1 test
+test fractions_recursive_scalar_parens_and_whole_failure ... FAILED
+
+failures:
+
+---- fractions_recursive_scalar_parens_and_whole_failure stdout ----
+
+thread 'fractions_recursive_scalar_parens_and_whole_failure' (197877) panicked at tests/fractions.rs:5:9:
+assertion `left == right` failed
+  left: Analysis { preview: "\\frac{a+b}{c}", issues: [Issue { kind: Incomplete, source: Span { start: ScalarOffset(0), end: ScalarOffset(13) } }] }
+ right: Analysis { preview: "(a+b)/c", issues: [] }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    fractions_recursive_scalar_parens_and_whole_failure
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: test failed, to rerun pass `--test fractions`

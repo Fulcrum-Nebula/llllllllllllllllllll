@@ -1,0 +1,26 @@
+   Compiling typex-core v0.1.0 (/home/sky/workspace/cat/llllllllllllllllllll/crates/typex-core)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.18s
+     Running tests/recovery.rs (crates/typex-core/target/debug/deps/recovery-cf2d37f1fcd10679)
+
+running 3 tests
+test opaque_recovery_prefers_outer_span_and_preserves_neighbors ... ok
+test spaced_font_is_one_opaque_construct_with_independent_neighbor ... FAILED
+test bounded_generated_sources_are_total_and_spans_are_ordered ... ok
+
+failures:
+
+---- spaced_font_is_one_opaque_construct_with_independent_neighbor stdout ----
+
+thread 'spaced_font_is_one_opaque_construct_with_independent_neighbor' (218139) panicked at tests/recovery.rs:7:9:
+assertion `left == right` failed
+  left: Analysis { preview: "🙂\\mathbb α+β", issues: [Issue { kind: Malformed, source: Span { start: ScalarOffset(1), end: ScalarOffset(8) } }] }
+ right: Analysis { preview: "🙂\\mathbb {\\alpha}+β", issues: [Issue { kind: Malformed, source: Span { start: ScalarOffset(1), end: ScalarOffset(17) } }] }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    spaced_font_is_one_opaque_construct_with_independent_neighbor
+
+test result: FAILED. 2 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+error: test failed, to rerun pass `--test recovery`
